@@ -19,7 +19,7 @@ export class DrawLine {
             let context = this._canvasObj.getContext('2d')
             this._canvasObj.addEventListener('click' , (e) => {
                 if(!this._end) {
-
+                    context.strokeStyle = '#aaa'
                     context.beginPath();
                     context.moveTo(0, e.offsetY);
                     context.lineTo(this._canvasObj.width, e.offsetY);
@@ -37,6 +37,7 @@ export class DrawLine {
             let context = this._canvasObj.getContext('2d')
             this._canvasObj.addEventListener('click' , (e) => {
                 if(!this._end) {
+                    context.strokeStyle = '#aaa'
                     context.beginPath();
                     context.moveTo(e.offsetX, 0);
                     context.lineTo(e.offsetX, this._canvasObj.height);
@@ -58,6 +59,7 @@ export class DrawLine {
                         this._mlX = e.offsetX;
                         this._mlY = e.offsetY;
                     } else {
+                        context.strokeStyle = '#aaa'
                         context.beginPath();
                         context.moveTo(this._mlX, this._mlY);
                         context.lineTo(e.offsetX, e.offsetY);

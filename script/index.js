@@ -1,7 +1,7 @@
-import {VcQuotation} from "/technical_trade_simulator/script/lib/vc_quotation.js";
-import {ChartDrawing} from '/technical_trade_simulator/script/lib/chart.js';
-import {DataCheck} from '/technical_trade_simulator/script/lib/data_check.js';
-import {DrawLine} from '/technical_trade_simulator/script/lib/draw_line.js';
+import {VcQuotation} from "/script/lib/vc_quotation.js";
+import {ChartDrawing} from '/script/lib/chart.js';
+import {DataCheck} from '/script/lib/data_check.js';
+import {DrawLine} from '/script/lib/draw_line.js';
 
 document.addEventListener('DOMContentLoaded', function() {
 
@@ -116,10 +116,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const acdl = new DrawLine()
 
     let  dlList = [[hLineObj, hdl, hdl.horizonLine],
-                   [vLineObj, vdl, vdl.verticalLine],
-                   [mLineObj, mdl, mdl.multiLine],
-                   [allClearObj, acdl, acdl.allClear]
-                   ];
+                    [vLineObj, vdl, vdl.verticalLine],
+                    [mLineObj, mdl, mdl.multiLine],
+                    [allClearObj, acdl, acdl.allClear]
+                    ];
 
 
     for(let value of dlList) {

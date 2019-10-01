@@ -126,8 +126,8 @@ input:hover,select:hover, button:hover{
 .icon {
     display: inline-flex;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.2);
-    border: solid  #000;
+    background-color: rgba(4, 179, 248, 0.582);
+    border: solid  rgb(88, 119, 255);
     border-radius: 5px;
     padding: 0;
     width: 30px;
@@ -163,7 +163,8 @@ input:hover,select:hover, button:hover{
 }
 
 .line_active {
-    background-color: #000;
+    background-color: rgb(2, 255, 242);
+
 }
 
 @media (max-width: 950px) {
