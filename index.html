@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>テクニカルトレードシミュレーター</title>
+
+    <link rel="stylesheet" href="style_sheet/sanitize.css">
+    <link rel="stylesheet" href="style_sheet/index.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+<header>
+    <h1>TechnicalTradeSimulator</h1>
+</header>
+
+<main>
+<article>
+    <section>
+        <div id="chart_1" class="container_c clump">
+            <form id="item1" name="chart_head1" class="chart_header item1">
+                <select-comp :data="currency"></select-comp>
+                <input type="date" name="after" id="after">
+                <input type="date" name="before" id="before">
+                <select-comp :data="period"></select-comp>
+                <button type="submit" id="search_btn">チャート表示</button>
+                <span id="com_state">通信状態</span>
+            </form>
+            <div id="chart_area" class="item2" >
+                <div id="main_chart"></div>
+                <div id="filter"></div>
+                <canvas width=100 height=100 id="canvas"></canvas>
+            </div>
+            <div id="item3" class="chart_side item3">
+                <button id="horizon_line" class="icon"><span class="horizon"></span></button>
+                <button id="vertical_line" class="icon"><span class="vertical"></span></button>
+                <button id="multi_line" class="icon"><span class="multi"></span></button>
+                <button id="all_clear" class="icon"><span class="allclear">AC</span></button>
+            </div>
+        </div>
+    </section>
+</article>
+</main>
+
+<footer>
+
+</footer>
+
+<script src="vue_js/indexvue.js"></script>
+<script type="module" src="script/index.js"></script>
+</body>
+</html>
